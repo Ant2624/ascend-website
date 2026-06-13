@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ASCEND — An Infiniti Experience · Costa Rica Retreats</title>
+<meta name="description" content="An immersive retreat in Costa Rica. Wellness, adventure, and a group curated by application. Come as you are. Leave different.">
+<meta property="og:title" content="ASCEND — Come as you are. Leave different.">
+<meta property="og:description" content="An immersive retreat in Costa Rica. By application only.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07130D">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<!-- PLACEHOLDER: enable when domain is live
+<script defer data-domain="ascendinfiniti.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+-->
+</head>
+<body>
+
+<a class="skip-link" href="#summit">Skip to application</a>
+
+<!-- ======= PERSISTENT ======= -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#basecamp" aria-label="Ascend home">ASCEND<span class="nav-inf">∞</span></a>
+  <a class="btn btn-gold btn-small" href="#summit" data-event="cta-nav">Apply</a>
+</header>
+
+<div class="thread" aria-hidden="true"><div class="thread-fill" id="threadFill"></div></div>
+
+<nav class="mountain-nav" id="mountainNav" aria-label="Section navigation">
+  <svg viewBox="0 0 80 300" width="64" height="240" aria-hidden="true">
+    <path id="mtnOutline" d="M40 18 L72 282 L8 282 Z" fill="none" stroke="rgba(201,168,76,.25)" stroke-width="1"/>
+    <path id="mtnPath" d="M40 24 C30 60 54 84 42 116 C32 142 56 162 44 192 C36 212 52 232 40 256 L40 276" fill="none" stroke="rgba(201,168,76,.45)" stroke-width="1.5"/>
+    <circle id="mtnDot" r="3.5" fill="#C9A84C"/>
+  </svg>
+  <ul id="waypoints"></ul>
+</nav>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-gold" href="#summit" data-event="cta-sticky">Apply for Your Spot →</a>
+</div>
+
+<!-- ======= 1 · BASECAMP ======= -->
+<section class="hero" id="basecamp" data-sky="#07130D" data-way="Basecamp">
+  <picture class="hero-poster" aria-hidden="true">
+    <source media="(max-width: 820px)" srcset="assets/img/hero-mobile-poster.jpg">
+    <img src="assets/img/hero-A-1920.jpg" alt="" fetchpriority="high">
+  </picture>
+  <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true"></video>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="kicker">An Infiniti Experience <span class="inf">∞</span></p>
+    <h1>Come as you are.<br><em>Leave different.</em></h1>
+    <p class="hero-sub">An immersive retreat in the Costa Rican jungle —<br class="bp"> wellness, adventure, and a group curated by application.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold btn-big" href="#summit" data-event="cta-hero">Apply for Your Spot →</a>
+      <button class="btn btn-ghost" id="watchFilm" data-event="film-open">Watch the film&ensp;▶</button>
+    </div>
+    <p class="hero-date" id="heroDate">Next retreat: Fall 2026</p>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ======= 2 · TRAILHEAD ======= -->
+<section class="trailhead" id="trailhead" data-sky="#0D1F17" data-way="The Trailhead">
+  <p class="proof-line" data-reveal>Costa Rica&ensp;·&ensp;Four times a year&ensp;·&ensp;By application only</p>
+  <div class="hook" data-reveal>
+    <p class="hook-lede">Most retreats offer rest.<br><strong>Ascend offers a reset.</strong></p>
+    <p>Deep in the Costa Rican jungle, with a group curated by application — designed to shake loose what no longer serves you, and make room for what's next.</p>
+    <p>This is not a vacation. You will come back different.</p>
+    <p class="pillars-line">Wellness&ensp;·&ensp;Adventure&ensp;·&ensp;Community&ensp;<span class="inf">∞</span></p>
+  </div>
+</section>
+
+<!-- ======= 3 · THE PILLARS ======= -->
+<section class="pillars" id="pillars" data-sky="#102419" data-way="The Pillars">
+  <article class="pillar" data-reveal>
+    <picture><source srcset="assets/img/shala-buddha-800.webp" type="image/webp"><img src="assets/img/shala-buddha-800.jpg" alt="Open-air yoga shala with a stone Buddha overlooking the jungle and ocean" loading="lazy"></picture>
+    <div class="pillar-text"><h3>Wellness</h3><p>Restore your body. Quiet your nervous system. Come home to yourself.</p></div>
+  </article>
+  <article class="pillar" data-reveal>
+    <picture><source srcset="assets/img/waterfall-800.webp" type="image/webp"><img src="assets/img/waterfall-800.jpg" alt="Jungle waterfall pool in deep green rainforest" loading="lazy"></picture>
+    <div class="pillar-text"><h3>Adventure</h3><p>Costa Rica is not a backdrop. It's part of the medicine.</p></div>
+  </article>
+  <article class="pillar" data-reveal>
+    <picture><source srcset="assets/img/dj-night-800.webp" type="image/webp"><img src="assets/img/dj-night-800.jpg" alt="Evening gathering lit in warm amber light" loading="lazy"></picture>
+    <div class="pillar-text"><h3>Community</h3><p>You won't just meet strangers. You'll make lifelong allies.</p></div>
+  </article>
+</section>
+
+<!-- ======= 4 · THE CLIMB ======= -->
+<section class="climb" id="climb" data-sky="#16301F" data-way="The Climb">
+  <header class="sec-head" data-reveal>
+    <p class="kicker">The Arc</p>
+    <h2>The Climb</h2>
+    <p class="sec-sub">Four nights or seven — the arc is the same.</p>
+  </header>
+  <div class="trail-wrap">
+    <svg class="trail" id="trailSvg" viewBox="0 0 100 1200" preserveAspectRatio="none" aria-hidden="true">
+      <path id="trailPath" d="M50 0 C20 100 80 200 50 300 C20 400 80 500 50 600 C20 700 80 800 50 900 C20 1000 80 1100 50 1200" fill="none" stroke="#C9A84C" stroke-width="2"/>
+    </svg>
+    <ol class="phases">
+      <li class="phase" data-reveal>
+        <picture><source srcset="assets/img/jungle-vista-800.webp" type="image/webp"><img src="assets/img/jungle-vista-800.jpg" alt="Jungle vista with clouds rolling over the canopy" loading="lazy"></picture>
+        <div><p class="phase-label">Arrival · The trailhead</p><h3>Exhale. You're here.</h3><p>The jungle slows you down before you even unpack. A welcome dinner at sunset. The first breath of real air.</p></div>
+      </li>
+      <li class="phase" data-reveal>
+        <picture><source srcset="assets/img/yoga-class-800.webp" type="image/webp"><img src="assets/img/yoga-class-800.jpg" alt="Morning yoga class on the open-air shala" loading="lazy"></picture>
+        <div><p class="phase-label">Opening · First switchbacks</p><h3>The day is yours.</h3><p>Morning movement on the open shala, ocean on the horizon. Something in you starts to unclench.</p></div>
+      </li>
+      <li class="phase phase-edge" data-reveal>
+        <video class="phase-video" poster="assets/img/night-session-800.jpg" preload="none" playsinline muted loop data-src="assets/video/edge-clip.mp4" aria-label="The Edge — a moment of courage"></video>
+        <div><p class="phase-label">The Edge · The steep pitch</p><h3>This is the day.</h3><p>The moment you realize this isn't comfortable. It's transformative. Breathwork. Cold water. A version of you that's been waiting.</p></div>
+      </li>
+      <li class="phase" data-reveal>
+        <picture><source srcset="assets/img/food-800.webp" type="image/webp"><img src="assets/img/food-800.jpg" alt="A shared meal served on a banana leaf" loading="lazy"></picture>
+        <div><p class="phase-label">Connection · The ridge line</p><h3>The conversations you'll replay for years.</h3><p>Long tables. Real questions. The kind of laughter that resets something.</p></div>
+      </li>
+      <li class="phase" data-reveal>
+        <picture><source srcset="assets/img/ocean-gaze-800.webp" type="image/webp"><img src="assets/img/ocean-gaze-800.jpg" alt="Looking out over the jungle to the ocean in stillness" loading="lazy"></picture>
+        <div><p class="phase-label">Integration · The high camp</p><h3>Something has changed.</h3><p>You can feel it but not yet name it. That's exactly right.</p></div>
+      </li>
+      <li class="phase" data-reveal>
+        <picture><source srcset="assets/img/sunset-trees-800.webp" type="image/webp"><img src="assets/img/sunset-trees-800.jpg" alt="Golden sunset over the ocean through the trees" loading="lazy"></picture>
+        <div><p class="phase-label">Return · The summit at dawn</p><h3>You leave with allies.</h3><p>And a version of yourself you're excited to meet.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======= 5 · THE VOICES ======= -->
+<section class="voices" id="voices" data-sky="#1E3A26" data-way="The Voices">
+  <header class="sec-head" data-reveal>
+    <p class="kicker">Real People</p>
+    <h2>Hear it from people who've been.</h2>
+  </header>
+  <div class="voice-grid">
+    <figure class="voice" data-reveal>
+      <button class="voice-play" data-video="assets/video/testimonial-chris.mp4" aria-label="Play Chris's story">
+        <img src="assets/img/poster-chris.jpg" alt="Chris, a past attendee" loading="lazy"><span class="play-ring">▶</span>
+      </button>
+      <figcaption>Chris</figcaption>
+    </figure>
+    <figure class="voice" data-reveal>
+      <button class="voice-play" data-video="assets/video/testimonial-dwight.mp4" aria-label="Play Dwight's story">
+        <img src="assets/img/poster-dwight.jpg" alt="Dwight, a past attendee" loading="lazy"><span class="play-ring">▶</span>
+      </button>
+      <figcaption>Dwight</figcaption>
+    </figure>
+    <figure class="voice" data-reveal>
+      <button class="voice-play" data-video="assets/video/testimonial-josh.mp4" aria-label="Play Josh's story">
+        <img src="assets/img/poster-josh.jpg" alt="Josh, a past attendee" loading="lazy"><span class="play-ring">▶</span>
+      </button>
+      <figcaption>Josh</figcaption>
+    </figure>
+    <!-- PLACEHOLDER: alumna quote card — replace with real quote from survey -->
+    <figure class="voice voice-quote" data-reveal>
+      <blockquote>Our next story could be yours.</blockquote>
+      <a class="quiet-link" href="#summit">Begin your application →</a>
+    </figure>
+  </div>
+  <div class="statement" data-reveal>
+    <p><strong>Most people arrive alone.</strong><br>Nobody leaves that way.</p>
+  </div>
+</section>
+
+<!-- ======= 6 · THE RIDGE ======= -->
+<section class="ridge" id="ridge" data-sky="#27462B" data-way="The Ridge">
+  <div class="origin" data-reveal>
+    <p class="kicker">The Beginning</p>
+    <h2>It started as Pura Vida.</h2>
+    <p>In April, we ran our first retreat under the name Pura Vida. It confirmed everything we believed: put the right people in the right place, and a week can change a life. Ascend is what it's becoming.</p>
+    <div class="origin-strip" aria-label="Candid moments from the first retreat">
+      <picture><source srcset="assets/img/morning-coffee-800.webp" type="image/webp"><img src="assets/img/morning-coffee-800.jpg" alt="Morning coffee overlooking the jungle" loading="lazy"></picture>
+      <picture><source srcset="assets/img/class-wide-800.webp" type="image/webp"><img src="assets/img/class-wide-800.jpg" alt="A class on the shala" loading="lazy"></picture>
+      <picture><source srcset="assets/img/food-800.webp" type="image/webp"><img src="assets/img/food-800.jpg" alt="A shared meal" loading="lazy"></picture>
+      <picture><source srcset="assets/img/dj-night-800.webp" type="image/webp"><img src="assets/img/dj-night-800.jpg" alt="An evening gathering" loading="lazy"></picture>
+    </div>
+  </div>
+  <div class="places">
+    <article class="place" data-reveal>
+      <picture><source srcset="assets/img/jacuzzi-coast-800.webp" type="image/webp"><img src="assets/img/jacuzzi-coast-800.jpg" alt="A private pool overlooking the Costa Rican coastline" loading="lazy"></picture>
+      <div><h3>Selva Armonia</h3><p>Where you sleep among the trees.</p></div>
+    </article>
+    <article class="place" data-reveal>
+      <picture><source srcset="assets/img/bedroom-view-800.webp" type="image/webp"><img src="assets/img/bedroom-view-800.jpg" alt="A bedroom opening onto jungle and ocean views" loading="lazy"></picture>
+      <div><h3>Tomer's House</h3><p>Intimate. Luxurious. Yours.</p></div>
+    </article>
+  </div>
+  <p class="why-cr" data-reveal>We didn't choose Costa Rica for the weather.<br>We chose it because the jungle demands presence.</p>
+</section>
+
+<!-- ======= 7 · THE LETTER ======= -->
+<section class="letter" id="letter" data-sky="#33522F" data-way="The Letter">
+  <div class="letter-card" data-reveal>
+    <p class="kicker">A Letter From the Founders</p>
+    <!-- PLACEHOLDER: founder letter — edit these three paragraphs in your own voice -->
+    <p>We built Ascend because we kept watching capable, driven people run on empty — and call it normal.</p>
+    <p>In April we brought a group to the Costa Rican jungle to test a belief: that the right place, the right practices, and the right people can change the direction of a life in under a week. We watched it happen. More than once.</p>
+    <p>So we're doing it again. Four times a year. If something in you said <em>that's me</em> while reading this page — we built this for you.</p>
+    <p class="signature">— The Ascend Founders <span class="sig-note">[name &amp; photo to come]</span></p>
+  </div>
+</section>
+
+<!-- ======= 8 · THE DETAILS ======= -->
+<section class="details" id="details" data-sky="#F5EFE0" data-way="The Details">
+  <header class="sec-head" data-reveal>
+    <p class="kicker dark">The Details</p>
+    <h2 class="dark">The next climb</h2>
+  </header>
+  <div class="retreat-list" id="retreatList" data-reveal></div>
+  <div class="details-grid">
+    <div class="included" data-reveal>
+      <h3>Included</h3>
+      <ul>
+        <li>Accommodation at private estates</li>
+        <li>All meals and beverages</li>
+        <li>Daily yoga, breathwork &amp; wellness sessions</li>
+        <li>Adventure days — waterfalls, trails, cold water</li>
+        <li>Evening gatherings and programming</li>
+        <li>Airport transfers</li>
+      </ul>
+    </div>
+    <div class="investment" data-reveal>
+      <h3>Investment</h3>
+      <p class="price">$2,000 – $3,000</p>
+      <p>Payment plans available. Flights not included.</p>
+      <p class="cohort">The room is founders, creatives, operators, parents, people mid-pivot — selected by application, not by follower count.</p>
+    </div>
+  </div>
+  <div class="faq" data-reveal>
+    <h3>Questions, answered</h3>
+    <details><summary>Who is this retreat for?</summary><p>People at a turning point — a career, a relationship, a decade. High performers who are tired of performing. If you read this far, probably you.</p></details>
+    <details><summary>Do I need experience with yoga or breathwork?</summary><p>No. Every practice is guided and every level is welcome. Willingness matters more than flexibility.</p></details>
+    <details><summary>Can I come alone?</summary><p>Yes. Most people do.</p></details>
+    <details><summary>How big is the group?</summary><p>Every group is curated by application. Who's in the room matters more to us than how many.</p></details>
+    <details><summary>Is this religious or spiritual?</summary><p>No religion, no dogma. Breathwork, stillness, movement, and cold water — explained in plain language, grounded in practice.</p></details>
+    <details><summary>What happens after I apply?</summary><p>A real person reads your application. We respond within 48 hours. Applying commits you to nothing — it starts a conversation.</p></details>
+    <details><summary>What if I can't make these dates?</summary><p>Join the list at the bottom of this page and you'll hear when the next retreat opens.</p></details>
+    <!-- PLACEHOLDER: confirm refund policy -->
+    <details><summary>What's the refund policy?</summary><p>Full transparency before you pay anything: the policy is shared in writing during your acceptance call, before any payment is made.</p></details>
+  </div>
+</section>
+
+<!-- ======= 9 · THE SUMMIT ======= -->
+<section class="summit" id="summit" data-sky="#C9A84C" data-way="The Summit">
+  <picture class="summit-bg" aria-hidden="true">
+    <img src="assets/img/summit-sky-1600.jpg" alt="" loading="lazy">
+  </picture>
+  <div class="summit-content">
+    <header data-reveal>
+      <p class="kicker">The Summit</p>
+      <h2>Ready to Ascend?</h2>
+      <p class="sec-sub">The application takes 3 minutes. We read every one.</p>
+    </header>
+    <form class="apply-form" id="applyForm" data-reveal method="POST" action="https://formspree.io/f/FORMSPREE_ID_PLACEHOLDER" novalidate>
+      <label>Full name<input type="text" name="name" autocomplete="name" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+      <label>Why this retreat — and why now?<textarea name="why" rows="4" required></textarea></label>
+      <label>How did you hear about Ascend?<input type="text" name="source"></label>
+      <input type="hidden" name="form-type" value="application">
+      <button class="btn btn-dark btn-big" type="submit" data-event="form-submit">Submit Application →</button>
+      <p class="form-note">A real person will reply within 48 hours.</p>
+    </form>
+    <div class="confirmation" id="confirmation" hidden>
+      <h3>Received.</h3>
+      <p>A real person will reply within 48 hours.</p>
+      <div class="confirm-actions">
+        <a class="btn btn-dark" href="https://instagram.com/ascend.infiniti" target="_blank" rel="noopener" data-event="ig-follow">Follow @ascend.infiniti</a>
+        <a class="quiet-link dark" href="mailto:?subject=You%20need%20to%20see%20this&body=I%20just%20applied%20to%20Ascend%20—%20a%20retreat%20in%20Costa%20Rica.%20This%20made%20me%20think%20of%20you%3A%20https%3A%2F%2Fascendinfiniti.com" data-event="nominate">Nominate someone who needs this →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 10 · THE DESCENT ======= -->
+<section class="descent" id="descent" data-sky="#0D1F17">
+  <div class="descent-inner" data-reveal>
+    <p class="kicker">The Descent</p>
+    <h2>What you bring down the mountain</h2>
+    <ul class="bring-down">
+      <li>A nervous system that remembers how to rest.</li>
+      <li>People who knew you for a week and saw you for years.</li>
+      <li>A direction — not a souvenir.</li>
+    </ul>
+    <form class="list-form" id="listForm" method="POST" action="https://formspree.io/f/FORMSPREE_ID_PLACEHOLDER">
+      <p class="list-lede">Receive word when the next retreat opens.</p>
+      <div class="list-row">
+        <input type="email" name="email" placeholder="Your email" autocomplete="email" required aria-label="Email address">
+        <input type="hidden" name="form-type" value="list">
+        <button class="btn btn-gold" type="submit" data-event="list-join">Join the list</button>
+      </div>
+      <p class="list-done" id="listDone" hidden>You'll hear from us. ∞</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" data-sky="#07130D">
+  <p class="footer-mark">ASCEND <span class="inf glow">∞</span></p>
+  <p class="footer-tag">An Infiniti Experience</p>
+  <nav class="footer-links">
+    <a href="https://instagram.com/ascend.infiniti" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:hello@ascendinfiniti.com">Contact</a><!-- PLACEHOLDER email -->
+    <a href="mailto:?subject=You%20belong%20on%20this%20mountain&body=https%3A%2F%2Fascendinfiniti.com">Nominate someone</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+  <p class="footer-legal">© 2026 Ascend. All rights reserved.</p>
+</footer>
+
+<!-- Film lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close film">✕</button>
+  <video id="filmPlayer" controls playsinline preload="none" src="assets/video/brand-film.mp4"></video>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
