@@ -77,13 +77,6 @@ skySections.forEach(sec => {
   }, { rootMargin: "-40% 0px -40% 0px" }).observe(sec);
 });
 
-/* ---- thread (mobile progress, climbing upward) ---- */
-const threadFill = $("#threadFill");
-addEventListener("scroll", () => {
-  const p = scrollY / (document.documentElement.scrollHeight - innerHeight);
-  threadFill.style.height = (p * 100).toFixed(2) + "%";
-}, { passive: true });
-
 /* ---- mountain navigator (desktop) ---- */
 const waySections = $$("[data-way]");
 const mtnPath = $("#mtnPath"), mtnDot = $("#mtnDot"), wayList = $("#waypoints");

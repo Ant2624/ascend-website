@@ -54,8 +54,6 @@ section{padding:clamp(4.5rem,12vh,9rem) clamp(1.25rem,6vw,5rem);position:relativ
 .nav-logo{font-family:var(--sans);font-weight:600;letter-spacing:.42em;color:var(--cream);text-decoration:none;font-size:1rem}
 .nav-inf{color:var(--gold);margin-left:.35em;letter-spacing:0}
 
-.thread{position:fixed;left:0;top:0;bottom:0;width:2px;z-index:90;background:rgba(201,168,76,.12)}
-.thread-fill{position:absolute;bottom:0;left:0;width:100%;height:0%;background:var(--gold)}
 
 .mountain-nav{position:fixed;right:1.4rem;top:50%;transform:translateY(-50%);z-index:95;display:none}
 .mountain-nav ul{list-style:none;position:absolute;inset:0}
