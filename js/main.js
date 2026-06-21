@@ -108,7 +108,7 @@ if (mtnPath) {
   mtnDot.setAttribute("cy", mtnPath.getPointAtLength(len).y);
 }
 
-/* ---- reveals + golden trail draw (GSAP if available) ---- */
+/* ---- reveals (GSAP if available) ---- */
 if (!reduced && window.gsap && window.ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
   $$("[data-reveal]").forEach(el => {
@@ -117,15 +117,6 @@ if (!reduced && window.gsap && window.ScrollTrigger) {
       scrollTrigger: { trigger: el, start: "top 82%" }
     });
   });
-  const trail = $("#trailPath");
-  if (trail) {
-    const tl = trail.getTotalLength();
-    gsap.set(trail, { strokeDasharray: tl, strokeDashoffset: tl });
-    gsap.to(trail, {
-      strokeDashoffset: 0, ease: "none",
-      scrollTrigger: { trigger: ".trail-wrap", start: "top 75%", end: "bottom 60%", scrub: 0.6 }
-    });
-  }
 } else {
   $$("[data-reveal]").forEach(el => el.classList.add("in"));
 }

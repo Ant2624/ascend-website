@@ -105,7 +105,6 @@ section{padding:clamp(4.5rem,12vh,9rem) clamp(1.25rem,6vw,5rem);position:relativ
 
 /* ===== climb ===== */
 .trail-wrap{position:relative;max-width:62rem;margin:0 auto}
-.trail{position:absolute;left:50%;top:0;height:100%;width:120px;transform:translateX(-50%);opacity:.7}
 .phases{list-style:none;display:grid;gap:clamp(3rem,8vh,5.5rem);position:relative;z-index:2}
 .phase{display:grid;gap:1.4rem;align-items:center;max-width:30rem}
 .phase:nth-child(odd){margin-right:auto}
